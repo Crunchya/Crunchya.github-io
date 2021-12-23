@@ -1,5 +1,5 @@
 /* Header */
-#head { background:#181015 url( ../images/bg_header.jpg) no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+#head { background: #181015 url( ../images/bg_header.jpg) no-repeat; background-size: cover; min-height:50vh; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
 	#head .lead { font-family:"Open sans", Helvetica, Arial; font-size:44px; margin-bottom:6px; color:white; line-height:1.15em; } 
 	#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; }
@@ -19,7 +19,15 @@
 html {
 	scroll-behavior : smooth;
 }
-
+.marronColor{
+	color: #382526;
+}
+.csharp:before{
+	content: url("../images/csharp.png");	
+}
+.vcenter{
+	margin-top: 10vh;
+}
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -39,7 +47,9 @@ html {
   background-color: #333; /* Add a dark-grey background on hover */
   color : white
 }
-
+.big{
+	min-height: 50vh;
+}
 /* Autohide navbar */
 .slideUp { top:-100px; }
 .headroom { -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; }
@@ -72,7 +82,7 @@ ul.list-spaces li{ margin-bottom:10px; }
 img { max-width:100%; }
 img.pull-right { margin-left: 10px; }
 img.pull-left { margin-right: 10px; }
-#map { width:100%; height:280px; }
+#map { width:100%; height:309px; }
 #social { margin-top:50px; margin-bottom:50px; }
 	#social .wrapper { width:340px; margin:0 auto; }
 

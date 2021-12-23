@@ -13,6 +13,7 @@
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
 
 	<!-- Custom styles for our template -->
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
@@ -26,7 +27,7 @@
 </head>
 
 <body class="home" style>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction(); ajout()" id="myBtn" title="Go to top">Top</button>
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top headroom animated" >
 		<div class="container">
@@ -37,12 +38,13 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="#">Home</a></li>
-					<li class="active"><a href="#about">&#192; propos</a></li>
+					<li class="active" id="homelink"><a href="#" onclick='ajout(); topFunction()'>Home</a></li>
+					<li class="" id="apropos"><a href="#" onclick='removeActive(); topFunction()'>&#192; propos</a></li>
 					<li>
 							<a href="projets.html">Mes projets</a>
 					</li>
           <li><a href="veilles.html">Mes veilles</a></li>
+          <li><a href="stages.html">Mes stages</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
@@ -56,53 +58,48 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="lead">Bienvenue sur mon Portfolio</h1>
-				<p class="tagline"><a href="#about">En apprendre plus</a></p>
 			</div>
 		</div>
 	</header>
 	<!-- /Header -->
 
 	<!-- Intro -->
-	<div class="container text-center">
+	<div class="container text-center big">
 		<br> <br>
-		<h2 class="thin">test</h2>
-		<p class="text-muted">test
-		</p>
+		<h2 class="thin">Qui suis-je?</h2>
+    <div class="vcenter">
+		    <p class="text-muted">test</p>
+    </div>
 	</div>
 	<!-- /Intro-->
+  
 	<!-- Highlights - jumbotron -->
+  <a name="projects"></a>
 	<div class="jumbotron top-space">
 		<div class="container">
 			
 			<h3 class="text-center thin">Mes projets</h3>
 			
 			<div class="row">
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4>Projet 1</h4></div>
-					<div class="h-body text-center">
-						<p><a href="projets.html#p1">test</a></p>
-					</div>
+				<div class="col-md-4 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fab fa-android fa-4"></i><u><a class="marronColor" href="projets.html#android">Android</a></u></h4></div>
 				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4>Projet 2</h4></div>
-					<div class="h-body text-center">
-						<p><a href="projets.html#p2">test</a></p>
-					</div>
+				<div class="col-md-4 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fab fa-symfony fa-4"></i><u><a class="marronColor" href="projets.html#symfony">Symfony</a></u></h4></div>
 				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4>Projet 3</h4></div>
-					<div class="h-body text-center">
-						<p><a href="projets.html#p3">test</a></p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4>Projet 4</h4></div>
-					<div class="h-body text-center">
-						<p><a href="projets.html#p4">test</a></p>
-					</div>
+				<div class="col-md-4 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="csharp"></i><u><a class="marronColor" href="projets.html#csharp">C#</a></u></h4></div>
 				</div>
 			</div> <!-- /row  -->
-		
+		<h3 class="text-center thin">Mes stages</h3>
+    <div class="row">
+				<div class="col-md-6 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fab fa-html5"></i><u><a class="marronColor" href="stages.html#s1">Stage de premi&egrave;re ann&eacute;e de BTS SIO</a></u></h4></div>
+				</div>
+				<div class="col-md-6 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fab fa-html5"></i><u><a class="marronColor" href="stages.html#s2">Stage de deuxi&egrave;me ann&eacute;e de BTS SIO</a></u></h4></div>
+				</div>
+    </div>
 		</div>
 	</div>
 	<!-- /Highlights -->
@@ -118,17 +115,17 @@
 			<div class="col-sm-6 row">
         <div class="col-sm-4">
 				<h3>Node.js</h3>
-				<p><a href = "veilles.html#node">Plus d'informations</a></p>
+        <p>Derni&egrave;re version : 17.3.0</p>
+				<p><u><a class="marronColor" href="veilles.html#node">Plus d'informations</a></u></p>
         </div>
         <img src="assets/images/node.jpeg" alt="">
 			</div>
 			<div class="col-sm-6">
 				<h3>test</h3>
-				<p><a href="veilles.html#p2">test</a></p>
+				<p><u><a class="marronColor" href="veilles.html#p2">test</a></u></p>
 			</div>
 		</div> <!-- /row -->
 
-    <a name="about"></a>
 		<div class="jumbotron top-space">
 			<h4>test</h4>
      		<p class="text-right">test</p>
@@ -166,7 +163,6 @@
 							<p>0782681033<br>
 								<a href="mailto:derepierre.alexandre@gmail.com">derepierre.alexandre@gmail.com</a><br>
 								<br>
-                ##Some text here
 							</p>	
 						</div>
 					</div>
@@ -175,7 +171,7 @@
 						<h3 class="widget-title">Suivez moi</h3>
 						<div class="widget-body">
 							<p class="follow-me-icons">
-								<a href="https://github.com/Crunchya"><i class="fa fa-github fa-2"></i></a>
+								<a href="https://github.com/Crunchya"><i class="fab fa-github fa-2"></i></a>
 							</p>	
 						</div>
 					</div>
@@ -199,10 +195,11 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="simplenav">
-								<a href="index.html">Home</a> | 
-								<a href="about.html">&#192; propos</a> |
+								<a href="#" onclick='ajout(); topFunction()'>Home</a> | 
+								<a href="#" onclick='removeActive(); topFunction()'>&#192; propos</a> |
 								<a href="projets.html">Mes projets</a> |
                 <a href="veilles.html">Mes veilles</a> |
+                <a href="stages.html">Mes stages</a> |
                 <a href="contact.html">Contact</a> |
 							</p>
 						</div>
