@@ -9,7 +9,7 @@
 	<title>Portfolio</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -26,6 +26,7 @@
 </head>
 
 <body class="home" style>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top headroom animated" >
 		<div class="container">
@@ -41,6 +42,7 @@
 					<li>
 							<a href="projets.html">Mes projets</a>
 					</li>
+          <li><a href="veilles.html">Mes veilles</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
@@ -54,7 +56,7 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="lead">Bienvenue sur mon Portfolio</h1>
-				<p class="tagline">test</p>
+				<p class="tagline"><a href="#about">En apprendre plus</a></p>
 			</div>
 		</div>
 	</header>
@@ -72,31 +74,31 @@
 	<div class="jumbotron top-space">
 		<div class="container">
 			
-			<h3 class="text-center thin">test</h3>
+			<h3 class="text-center thin">Mes projets</h3>
 			
 			<div class="row">
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4>test</h4></div>
+					<div class="h-caption"><h4>Projet 1</h4></div>
 					<div class="h-body text-center">
-						<p>test</p>
+						<p><a href="projets.html#p1">test</a></p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4>test</h4></div>
+					<div class="h-caption"><h4>Projet 2</h4></div>
 					<div class="h-body text-center">
-						<p>test</p>
+						<p><a href="projets.html#p2">test</a></p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4>test</h4></div>
+					<div class="h-caption"><h4>Projet 3</h4></div>
 					<div class="h-body text-center">
-						<p>test</p>
+						<p><a href="projets.html#p3">test</a></p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4>test</h4></div>
+					<div class="h-caption"><h4>Projet 4</h4></div>
 					<div class="h-body text-center">
-						<p>test</p>
+						<p><a href="projets.html#p4">test</a></p>
 					</div>
 				</div>
 			</div> <!-- /row  -->
@@ -105,35 +107,28 @@
 	</div>
 	<!-- /Highlights -->
 
-  <a name="about"></a>
+  <a name="veilles"></a>
 	<!-- container -->
 	<div class="container">
 
-		<h2 class="text-center top-space">test</h2>
+		<h2 class="text-center top-space">Mes veilles</h2>
 		<br>
 
 		<div class="row">
-			<div class="col-sm-6">
-				<h3>test</h3>
-				<p>test</p>
+			<div class="col-sm-6 row">
+        <div class="col-sm-4">
+				<h3>Node.js</h3>
+				<p><a href = "veilles.html#node">Plus d'informations</a></p>
+        </div>
+        <img src="assets/images/node.jpeg" alt="">
 			</div>
 			<div class="col-sm-6">
 				<h3>test</h3>
-				<p>test</p>
-			</div>
-		</div> <!-- /row -->
-
-		<div class="row">
-			<div class="col-sm-6">
-				<h3>test</h3>
-				<p>test</p>
-			</div>
-			<div class="col-sm-6">
-				<h3>test</h3>
-				<p>test</p>
+				<p><a href="veilles.html#p2">test</a></p>
 			</div>
 		</div> <!-- /row -->
 
+    <a name="about"></a>
 		<div class="jumbotron top-space">
 			<h4>test</h4>
      		<p class="text-right">test</p>
@@ -207,6 +202,7 @@
 								<a href="index.html">Home</a> | 
 								<a href="about.html">&#192; propos</a> |
 								<a href="projets.html">Mes projets</a> |
+                <a href="veilles.html">Mes veilles</a> |
                 <a href="contact.html">Contact</a> |
 							</p>
 						</div>
@@ -236,5 +232,6 @@
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
+  <script src="assets/js/ScrollTop.js"></script>
 </body>
 </html>
