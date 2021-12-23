@@ -9,7 +9,5 @@ jQuery(document).ready(function($) {
 			"unpinned": "slideUp"
 		}
 	});
-	document.getElementById("demo").innerHTML =
-	"Page path is " + window.location.pathname;
 
 });
