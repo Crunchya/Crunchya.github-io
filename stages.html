@@ -26,7 +26,7 @@
 </head>
 
 <body style>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Remonter">Top</button>
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 		<div class="container">
@@ -37,14 +37,14 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
-					<li class=""><a href="index.html">Home</a></li>
-					<li class=""><a href="index.html">&#192; propos</a></li>
-					<li>
-              <a href="projets.html">Mes projets</a>
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html">&#192; propos</a></li>
+					<li class="nav-item">
+              <a class="nav-link" href="projets.html">Mes projets</a>
           </li>
-          <li><a href="veilles.html">Mes veilles</a></li>
-          <li class="active"><a href="stages.html">Mes stages</a></li>
-					<li><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="veilles.html">Mes veilles</a></li>
+          <li class="active nav-item"><a class="nav-link" href="stages.html">Mes stages</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -61,56 +61,122 @@
 			<li class="active">Mes stages</li>
 		</ol>
 
-		<div class="row">
-			
 			<!-- Article main content -->
-			<article class="col-md-8 maincontent">
+			<div class="col-md-12">
 				<header class="page-header">
 					<h1 class="page-title">Mes stages</h1>
 				</header>
 				<p>Ici vous trouverez les stages que j&#39;ai effectu&eacute;</p>
         <p>Cela comprend le stage de premi&egrave;re ann&eacute;e de BTS SIO et celui de seconde ann&eacute;e de BTS SIO</p>
-
-				<h2 name="s1">Stage de premi&egrave;re ann&eacute;e de BTS SIO</h2>
-				<p>test</p>
-				<p>test</p>
-
-				<h2 name="s2">Stage de deuxi&egrave;me ann&eacute;e de BTS SIO</h2>
-				<p>test</p>
-				<p>test</p>
-			</article>
-			<!-- /Article -->
+      </div>
+      <div class="col-sm-12">
+        <div class="row">
 			
-			<!-- Sidebar -->
-			<aside class="col-md-4 sidebar sidebar-right">
 
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>test</h4>
-						<p>test</p>
-					</div>
-				</div>
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>test</h4>
-						<p><img src="assets/images/1.jpg" alt="">test</p>
-					</div>
-				</div>
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>test</h4>
-						<p><img src="assets/images/2.jpg" alt="">test</p>
-						<p>test</p>
-					</div>
-				</div>
-
-			</aside>
+        <div class="jumbotron top-space col-sm-6">
+		        <div class="container">
+			
+				        <h2 name="s1">Stage de premi&egrave;re ann&eacute;e de BTS SIO</h2>
+                <h3> Que devais-je faire?</h3>
+                <p> Je devais cr&eacute;er un site internet responsive et fonctionnel en 4 semaines et avec le CMS Wordpress</p>
+                <div class="row">
+                    <h3 class="text-center"><a id="dlLink" class="marronColor" href="assets/files/stage1.txt" target="_blank" noreferrer> Les &eacute;tapes</a></h3>
+                    <div class="col-sm-6 highlight">
+                        <br>
+                        <h4> Semaine 1 </h4>
+                        <h5><u>R&eacute;alis&eacute;</u></h5>
+				                <p>Lors de la premi&egrave;re semaine, je me suis familiaris&eacute; avec WordPress puis j&#39;ai commenc&eacute; et fini les maquettes de site ainsi que la cr&eacute;ation d&#39;un compte administrateur avec des droits que sur la base de donn&eacute;es
+                        du site.<br>Durant cette semaine, j&#39;ai aussi mis des restriction sur certaine pages</p>
+                        <h5><u>Probl&egrave;mes rencontr&eacute;s</u></h5>
+                        <p>Mauvaise manipulation qui m&#39;a fait recommencer le projet.</p>
+                    </div>
+                    <div class="col-sm-6 highlight">
+                        <br>
+                        <h4> Semaine 2 </h4>
+                        <h5><u>R&eacute;alis&eacute;</u></h5>
+				                <p>Lors de la deuxi&egrave;me semaine, j&#39;ai appliqu&eacute; les demandes(comme modifier les couleurs, rajouter des pages, am&eacute;liorer la s&eacute;curit&eacute;, ...) du groupe pour lequel je faisait le site et j&#39;ai demand&eacute; &agrave; le mettre sur le site du lyc&eacute;e</p>
+                        <!-- pour la hauteur -->
+                        <p class="invisible">invisible<br>invisible</p>
+                        <!--fin-->
+                        <h5><u>Probl&egrave;mes rencontr&eacute;s</u></h5>
+                        <p>Aucun probl&egrave;me majaur &agrave; part les probl&egrave;mes d&#39;extensions WordPress(j&#39;ai d&ucirc; modifier les fichiers des extensions)</p>
+                    </div>
+                    <div class="col-sm-6 highlight">
+                        <br>
+                        <h4> Semaine 3 </h4>
+				                <h5><u>R&eacute;alis&eacute;</u></h5>
+				                <p>Lors de la troisi&egrave;me semaine, j&#39;ai commenc&eacute; par faire la barre de recherche de &quot;posts&quot; sur le site suivi d&#39;une tr&egrave;s longue recherche de style pour les pages(les couleurs ayant d&eacute;j&agrave; &eacute;t&eacute; choisies et test divers plus mise sur google du site et modifications qui s&#39;en suivent</p>
+                        <h5><u>Probl&egrave;mes rencontr&eacute;s</u></h5>
+                        <p>Probl&egrave;me d&#39;inspiration concernant le style des pages et probl&egrave;me d&#39;attente d&#39;indexation de google</p>
+                    </div>
+                    <div class="col-sm-6 highlight">
+                        <br>
+                        <h4> Semaine 4 </h4>
+                        <h5><u>R&eacute;alis&eacute;</u></h5>
+				                <p>Lors de la derni&egrave;re semaine, j&#39ai rajout&eacute; la favicon, le logo fait sur-mesure pour le site, tous les probl&egrave,mes d&#39;indexation ont &eacute;t&eacute; r&eacute;gl&eacute;s ainsi que la disposition de certains &eacute;l&eacute;ments et rendre le site plus &quot;responsive&quot;
+                        <span class="invisible">this is just to compend the fact that all is not symetric<span></p>
+                        <h5><u>Probl&egrave;mes rencontr&eacute;s</u></h5>
+                        <p>Aucune r&eacute;ponse du groupe concernant le projet et la disposition des logos fournis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="jumbotron top-space col-sm-6">
+		        <div class="container">
+				        <h2 name="s2">Stage de deuxi&egrave;me ann&eacute;e de BTS SIO</h2>
+                 <h3> Que devais-je faire?</h3>
+                 <p> ##un texte ici<br>##un autre texte ici</p>
+                <div class="row ">
+                    <h3 class="text-center"><a class="marronColor" href="" target="blank" noopener noreferrer> Les &eacute;tapes</a></h3>
+                    <div class="col-sm-6 highlight">
+                        <br>
+                        <h4> Semaine 1 </h4>
+                        <h5><u>R&eacute;alis&eacute;</u></h5>
+				                <p class="invisible">Lors de la premi&egrave;re semaine, je me suis familiaris&eacute; avec WordPress puis j&#39;ai commenc&eacute; et fini les maquettes de site ainsi que la cr&eacute;ation d&#39;un compte administrateur avec des droits que sur la base de donn&eacute;es
+                        du site.<br>Durant cette semaine, j&#39;ai aussi mis des restriction sur certaine pages</p>
+                        <h5><u>Probl&egrave;mes rencontr&eacute;s</u></h5>
+                        <p class="invisible">Mauvaise manipulation qui m&#39;a fait recommencer le projet.</p>
+                    </div>
+                    <div class="col-sm-6 highlight">
+                        <br>
+                        <h4> Semaine 2 </h4>
+                        <h5><u>R&eacute;alis&eacute;</u></h5>
+				                <p class="invisible">Lors de la deuxi&egrave;me semaine, j&#39;ai appliqu&eacute; les demandes(comme modifier les couleurs, rajouter des pages, am&eacute;liorer la s&eacute;curit&eacute;, ...) du groupe pour lequel je faisait le site et j&#39;ai demand&eacute; &agrave; le mettre sur le site du lyc&eacute;e</p>
+                        <!-- pour la hauteur -->
+                        <p class="invisible">invisible<br>invisible</p>
+                        <!--fin-->
+                        <h5><u>Probl&egrave;mes rencontr&eacute;s</u></h5>
+                        <p class="invisible">Aucun probl&egrave;me majaur &agrave; part les probl&egrave;mes d&#39;extensions WordPress(j&#39;ai d&ucirc; modifier les fichiers des extensions)</p>
+                    </div>
+                    <div class="col-sm-6 highlight">
+                        <br>
+                        <h4> Semaine 3 </h4>
+				                <h5><u>R&eacute;alis&eacute;</u></h5>
+				                <p class="invisible">Lors de la troisi&egrave;me semaine, j&#39;ai commenc&eacute; par faire la barre de recherche de &quot;posts&quot; sur le site suivi d&#39;une tr&egrave;s longue recherche de style pour les pages(les couleurs ayant d&eacute;j&agrave; &eacute;t&eacute; choisies et test divers plus mise sur google du site et modifications qui s&#39;en suivent</p>
+                        <h5><u>Probl&egrave;mes rencontr&eacute;s</u></h5>
+                        <p class="invisible">Probl&egrave;me d&#39;inspiration concernant le style des pages et probl&egrave;me d&#39;attente d&#39;indexation de google</p>
+                    </div>
+                    <div class="col-sm-6 highlight">
+                        <br>
+                        <h4> Semaine 4 </h4>
+                        <h5><u>R&eacute;alis&eacute;</u></h5>
+				                <p class="invisible">Lors de la derni&egrave;re semaine, j&#39ai rajout&eacute; la favicon, le logo fait sur-mesure pour le site, tous les probl&egrave,mes d&#39;indexation ont &eacute;t&eacute; r&eacute;gl&eacute;s ainsi que la disposition de certains &eacute;l&eacute;ments et rendre le site plus &quot;responsive&quot;
+                        <span class="invisible">this is just to compend the fact that all is not symetric<span></p>
+                        <h5><u>Probl&egrave;mes rencontr&eacute;s</u></h5>
+                        <p class="invisible">Aucune r&eacute;ponse du groupe concernant le projet et la disposition des logos fournis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+			</div>
+     </div>
+			<!-- /Article -->
 			<!-- /Sidebar -->
 
 		</div>
 	</div>	<!-- /container -->
 	
-
 	<footer id="footer" class="top-space">
 
 		<div class="footer1">

@@ -15,7 +15,9 @@
 	#head { min-height:420px; padding-top:160px; }
 	#head .lead { font-size: 34px; }
 }
-
+.invisible{
+	visibility: hidden;
+}
 html {
 	scroll-behavior : smooth;
 }
@@ -27,6 +29,11 @@ html {
 }
 .vcenter{
 	margin-top: 10vh;
+}
+hr.verticale{
+   color:black;
+   width : 1px;
+   height : 20px;
 }
 #myBtn {
   display: none; /* Hidden by default */
@@ -49,6 +56,9 @@ html {
 }
 .big{
 	min-height: 50vh;
+}
+.bigger{
+	min-height: 70vh;
 }
 /* Autohide navbar */
 .slideUp { top:-100px; }
