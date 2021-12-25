@@ -29,16 +29,19 @@
 <body class="home" style>
   <button onclick="topFunction(); ajout()" id="myBtn" title="Remonter">Top</button>
 	<!-- Fixed navbar -->
-	<div class="navbar navbar-inverse navbar-fixed-top headroom animated" >
-		<div class="container">
+	 <nav class="navbar navbar-inverse navbar-fixed-top headroom animated">
+    <div class="container">
 			<div class="navbar-header">
-				<!-- Button for smallest screens -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="border-radius: 50%;" alt="Progressus HTML5 template"></a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav pull-right">
-					<li class="active nav-item" id="homelink"><a href="#" class="nav-link" onclick='ajout(); topFunction()'>Home</a></li>
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="border-radius: 50%;" alt="Progressus HTML5 template"></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="nav navbar-nav pull-right">
+        <li class="active nav-item" id="homelink"><a href="#" class="nav-link" onclick='ajout(); topFunction()'>Home</a></li>
 					<li class="nav-item" id="apropos"><a class="nav-link" href="#" onclick='removeActive(); topFunction()'>&#192; propos</a></li>
 					<li class="nav-item">
 							<a class="nav-link" href="projets.html">Mes projets</a>
@@ -46,10 +49,10 @@
           <li class="nav-item"><a class="nav-link" href="veilles.html">Mes veilles</a></li>
           <li class="nav-item"><a class="nav-link" href="stages.html">Mes stages</a></li>
 					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-				</ul>
-			</div><!--/.nav-collapse -->
-		</div>
-	</div> 
+      </ul>
+    </div>
+</div>
+  </nav>
 	<!-- /.navbar -->
 
 	<!-- Header -->
