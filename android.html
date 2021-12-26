@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title></title>
+	<title>Projets Android</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
@@ -26,7 +26,7 @@
 </head>
 
 <body style>
-  <button onclick="topFunction()" id="myBtn" title="Remonter">Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<!-- Fixed navbar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top headroom animated">
     <div class="container">
@@ -38,17 +38,25 @@
       <span class="icon-bar"></span>
     </button>
     </div>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="nav navbar-nav pull-right">
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="nav navbar-nav pull-right">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="index.html">&#192; propos</a></li>
-					<li class="nav-item active">
-							<a class="nav-link" href="projets.html">Mes projets</a>
-					</li>
+					<li style="align:center"class="dropdown nav-item">
+                  <button style="border:none;" class="btn btn-secondary dropdown-toggle nav-link bg-hidden" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="colorWhite">Mes projets</span>
+                        <i class="fa fa-caret-down colorWhite"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item active"><a href="android.html"><u><b>Android</b></u></a></li>
+                        <li class="dropdown-item"><a href="symfony.html">Symfony</a></li>
+                        <li class="dropdown-item"><a href="csharp.html">C#</a></li>
+                  </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="veilles.html">Mes veilles</a></li>
           <li class="nav-item"><a class="nav-link" href="stages.html">Mes stages</a></li>
 					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+				</ul>
     </div>
 </div>
   </nav>
@@ -61,7 +69,8 @@
 
 		<ol class="breadcrumb">
 			<li><a class="marronColor" href="index.html">Home</a></li>
-			<li class="active">Mes projets</li>
+			<li><a class="marronColor" href="index.html#projects">Mes projets</a></li>
+      <li class="active">Android</li>
 		</ol>
 
 		<div class="row">
@@ -75,15 +84,19 @@
 				<p>test</p>
 				<p>test</p>
 
-				<h2 name="android">Projet 1</h2>
+				<h2 name="p1">Projet 1</h2>
 				<p>test</p>
 				<p>test</p>
 
-				<h2 name="symfony">Projet 2</h2>
+				<h2 name="p2">Projet 2</h2>
 				<p>test</p>
 				<p>test</p>
 
-        <h2 name="csharp">Projet 3</h2>
+        <h2 name="p3">Projet 3</h2>
+				<p>test</p>
+				<p>test</p>
+
+        <h2 name="p4">Projet 4</h2>
 				<p>test</p>
 				<p>test</p>
 			</article>
@@ -129,7 +142,7 @@
 						<h3 class="widget-title">Contact</h3>
 						<div class="widget-body">
 							<p>0782681033<br>
-								<a href="mailto:derepierre.alexandre@gmail.com">derepierre.alexandre@gmail.com</a><br>
+								<a href="mailto:#">derepierre.alexandre@gmail.com</a><br>
 								<br>
 
 							</p>	
@@ -140,7 +153,7 @@
 						<h3 class="widget-title">Suivez moi</h3>
 						<div class="widget-body">
 							<p class="follow-me-icons clearfix">
-								<a href="https://github.com/Crunchya"><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
 							</p>	
 						</div>
 					</div>
@@ -166,7 +179,7 @@
 							<p class="simplenav">
 								<a href="index.html">Home</a> | 
 								<a href="index.html">&#192; propos</a> |
-								<a href="projets.html">Mes projets</a> |
+								<a href="index.html#projects">Mes projets</a> |
                 <a href="veilles.html">Mes veilles</a> |
                 <a href="stages.html">Mes stages</a> |
 								<a href="contact.html">Contact</a> |
@@ -192,10 +205,8 @@
 
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>

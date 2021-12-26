@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title></title>
+	<title>Projets Symfony</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
@@ -28,27 +28,38 @@
 <body style>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<!-- Fixed navbar -->
-	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
-		<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top headroom animated">
+    <div class="container">
 			<div class="navbar-header">
-				<!-- Button for smallest screens -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="border-radius: 50%;" alt="Progressus HTML5 template"></a>
-			</div>
-			<div class="navbar-collapse collapse">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" style="border-radius: 50%;" alt="Progressus HTML5 template"></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    </div>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="nav navbar-nav pull-right">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="index.html#about">&#192; propos</a></li>
-					<li>
-              <a href="projets.html">Mes projets</a>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html">&#192; propos</a></li>
+					<li class="dropdown nav-item">
+                  <button style="border:none;" class="btn btn-secondary dropdown-toggle nav-link bg-hidden" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="colorWhite">Mes projets</span>
+                        <i class="fa fa-caret-down colorWhite"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item"><a href="android.html">Android</a></li>
+                        <li class="dropdown-item active"><a href="symfony.html"><u><b>Symfony</b></u></a></li>
+                        <li class="dropdown-item"><a href="csharp.html">C#</a></li>
+                  </ul>
           </li>
-          <li><a href="veilles.html">Mes veilles</a></li>
-          <li class="active"><a href="stages.html">Mes stages</a></li>
-					<li><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="veilles.html">Mes veilles</a></li>
+          <li class="nav-item"><a class="nav-link" href="stages.html">Mes stages</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 				</ul>
-			</div><!--/.nav-collapse -->
-		</div>
-	</div> 
+    </div>
+</div>
+  </nav>
 	<!-- /.navbar -->
 
 	<header id="head" class="secondary"></header>
@@ -57,8 +68,9 @@
 	<div class="container">
 
 		<ol class="breadcrumb">
-			<li><a href="index.html">Home</a></li>
-			<li class="active">Mes projets</li>
+			<li><a class="marronColor" href="index.html">Home</a></li>
+			<li><a class="marronColor" href="index.html#projects">Mes projets</a></li>
+      <li class="active">Symfony</li>
 		</ol>
 
 		<div class="row">
@@ -166,8 +178,8 @@
 						<div class="widget-body">
 							<p class="simplenav">
 								<a href="index.html">Home</a> | 
-								<a href="about.html">&#192; propos</a> |
-								<a href="projets.html">Mes projets</a> |
+								<a href="index.html">&#192; propos</a> |
+								<a href="index.html#projects">Mes projets</a> |
                 <a href="veilles.html">Mes veilles</a> |
                 <a href="stages.html">Mes stages</a> |
 								<a href="contact.html">Contact</a> |

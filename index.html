@@ -43,9 +43,17 @@
       <ul class="nav navbar-nav pull-right">
         <li class="active nav-item" id="homelink"><a href="#" class="nav-link" onclick='ajout(); topFunction()'>Home</a></li>
 					<li class="nav-item" id="apropos"><a class="nav-link" href="#" onclick='removeActive(); topFunction()'>&#192; propos</a></li>
-					<li class="nav-item">
-							<a class="nav-link" href="projets.html">Mes projets</a>
-					</li>
+              <li class="dropdown nav-item">
+                  <button style="border:none;" class="btn btn-secondary dropdown-toggle nav-link bg-hidden" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mes projets
+                        <i class="fa fa-caret-down"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item"><a href="android.html">Android</a></li>
+                        <li class="dropdown-item"><a href="symfony.html">Symfony</a></li>
+                        <li class="dropdown-item"><a href="csharp.html">C#</a></li>
+                  </ul>
+              </li>
           <li class="nav-item"><a class="nav-link" href="veilles.html">Mes veilles</a></li>
           <li class="nav-item"><a class="nav-link" href="stages.html">Mes stages</a></li>
 					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -91,13 +99,13 @@
 			
 			<div class="row">
 				<div class="col-md-4 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fab fa-android fa-4"></i><u><a class="marronColor" href="projets.html#android">Android</a></u></h4></div>
+					<div class="h-caption"><h4><i class="fab fa-android fa-4"></i><u><a class="marronColor" href="android.html">Android</a></u></h4></div>
 				</div>
 				<div class="col-md-4 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fab fa-symfony fa-4"></i><u><a class="marronColor" href="projets.html#symfony">Symfony</a></u></h4></div>
+					<div class="h-caption"><h4><i class="fab fa-symfony fa-4"></i><u><a class="marronColor" href="symfony.html">Symfony</a></u></h4></div>
 				</div>
 				<div class="col-md-4 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="csharp"></i><u><a class="marronColor" href="projets.html#csharp">C#</a></u></h4></div>
+					<div class="h-caption"><h4><i class="csharp"></i><u><a class="marronColor" href="csharp.html">C#</a></u></h4></div>
 				</div>
 			</div> <!-- /row  -->
 		<h3 class="text-center thin">Mes stages</h3>
@@ -210,7 +218,7 @@
 							<p class="simplenav">
 								<a href="#" onclick='ajout(); topFunction()'>Home</a> | 
 								<a href="#" onclick='removeActive(); topFunction()'>&#192; propos</a> |
-								<a href="projets.html">Mes projets</a> |
+								<a href="#projects">Mes projets</a> |
                 <a href="veilles.html">Mes veilles</a> |
                 <a href="stages.html">Mes stages</a> |
                 <a href="contact.html">Contact</a> |

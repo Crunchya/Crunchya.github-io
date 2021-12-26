@@ -60,6 +60,28 @@ hr.verticale{
 .bigger{
 	min-height: 70vh;
 }
+.bg-hidden{
+	color:#FFFFFF66;
+	background: none;
+	font-weight: normal;
+}
+#dropdownMenuButton:hover{
+     	color: white;
+}
+#dropdownMenuButton:focus{
+    	color: white;
+}
+#dropdownMenuButton{
+	max-width:16vw;
+	padding-right: 0.4vw;
+	padding-left: 0.3vw;
+}
+.colorWhite{
+	color:white;
+}
+.maxVisible{
+	background-color: rgba(0,0,0,1);
+}
 /* Autohide navbar */
 .slideUp { top:-100px; }
 .headroom { -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; }
