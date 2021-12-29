@@ -60,7 +60,7 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <li class="dropdown-item"><a href="node.html">Node.js</a></li>
-                        <li class="dropdown-item active"><a href="autre.html"><b><u>Autre</u></b></a></li>
+                        <li class="dropdown-item active"><a href="v8.html"><b><u>V8</u></b></a></li>
                   </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="stages.html">Mes stages</a></li>
@@ -79,7 +79,7 @@
 		<ol class="breadcrumb">
 			<li><a class="marronColor" href="index.html">Home</a></li>
 			<li><a class="marronColor" href="index.html#veilles">Mes veilles</a></li>
-      <li class="active">Autre</li>
+      <li class="active">V8</li>
 		</ol>
 
 		<div class="row">
@@ -91,12 +91,13 @@
 					<h1 class="page-title">Mes veilles</h1>
 				</header>
         <p>Ici vous trouverez les veilles technologiques que j&#39;ai effectu&eacute; tout au long de cette ann&eacute;e</p>
-        <p>Cela comprend la veille technologique de Node.js et ####la deuxi&egrave;me veille</p>
+        <p>Nous nous int&eacute;ressons ici &agrave; V8</p>
+        <p><i>Je r&eacute;alise moi-m&ecirc;me absolument tous les codes que vous voyez dans cette page</i></p>
 
         <a name="node"></a>
-				<h2>Node.js</h2>
-         <h4> Qu'est-ce que Node.js</h4>
-         <p> Node.js est un environnement d'&eacute;x&eacute;cution asynchrone utilisant javascript et pouvant &ecirc;tre utilis&eacute; aussi bien du c&ocirc;t&eacute; client que du c&ocirc;t&eacute; serveur</p>
+				<h2>V8</h2>
+         <h4> Qu'est-ce que V8</h4>
+         <p> V8 est un moteur JavaScript(utilis&eacute; par Node.js, Chrome et d&#39;autre) permettant de convertir directement votre code JavaScript en langage machine avant d&#39;&eacute;x&eacute;cuter celui-ci, ce qui r&eacute;sulte en une optimisation maximale lors de l&#39;&eacute;x&eacute;cution du code.</p>
 				 <table class="table table-bordered table-hover col-md-4">
             <tr>
               <th style="text-align: center" scope="col">Date</th>
@@ -108,68 +109,45 @@
             </tr>
             <tr style="text-align: center">
               <th style="vertical-align : middle" scope="row">Septembre</th>
-                <td><p style="text-align: center"><b>Version : 16.9.0</b></p>
-                    Ajouts : - Corepack, ce nouvel ajout permet de faire un lien entre les projets Node.js et les gestionnaires de paquets (package managers).<br>
-                    - De plus, ce pack permet d&#39;utiliser le package manager Yarn et pnpm(npm)<br>
-                    - V8 pour javascript est pass&eacute; &agrave; la version 9.3 et apporte de meilleures performances pour javaScript.<br><br>
-                    <p style="text-align: center"><b>Version : 16.9.1</b></p>
-                    Ajouts : - V8 : correction d&#39;un dysfonctionnement lors de la v&eacute;rification du code.<br><br>
-                    <p style="text-align: center"><b>Version : 16.10.0</b></p>
-                    Ajouts : - npm passe &agrave; la version 7.24.0 ainsi que Acorn passe &agrave; la version 8.5.0<br>
-                    - ayase-252 (personne) &agrave; &eacute;t&eacute; ajout&eacute; aux collaborateurs de node.js<br>
-                    - limite de requ&ecirc;tes http par session<br>
-                    - nouvelle option pour CLI
+                <td><p style="text-align: center"><b>Version : 9.4</b></p>
+                    Ajouts : - La classe d'initialisation 'static { }' qui permet d&#39;initialiser du code &agrave; &eacute;x&eacute;cuter une seule fois.<br>
+                             - Il y a aussi eu des changements au niveau de l&39;API v8 mais je n&#39;ai pas r&eacute;ussi &agrave; comprendre les changements op&eacute;r&eacute;s.<br>
+                    <p>La premi&egrave;re image de septembre montre la classe "static { }" en action.<br><br>
+                    <p style="text-align: center"><b>Version : 9.5</b></p>
+                    Ajouts : - Lors de la version 8.1 de V8, l&#39;API <i>Intl.DisplayNames</i> avait &eacute;t&eacute; ajout&eacute;, dans cette nouvelle version, cette API &agrave; &eacute;t&eacute; am&eacute;lior&eacute;e rajoutant deux nouveaux types : calendar et dateTimeField(vous pouvez les voir dans la deuxi&egrave;meimage d&#39;exemple.<br>
+                    -Une am&eacute;lioration du type &#39;language&#39; a &eacute;t&eacute; fournie o&ugrave; ce type supporte les dialectes(comme l&#39;anglais Australien, am&eacute;ricain, anglais, ...).
                 </td>
             </tr>
 
             <tr style="text-align: center">
               <th style="vertical-align : middle; text-align:center" scope="row">Octobre</th>
-                <td><p style="text-align: center"><b>Regroupement du commit&eacute; communautaire et du Commit&eacute; technique</b></p>
-                    Le commit&eacute; communautaire de Node.js a &eacute;t&eacute; regroup&eacute; avec le commit&eacute; technique car Node.js a vu un rel&acirc;chement dans les &eacute;quipes du communautaire et les a regroup&eacute;s<br><br>
-                    <p style="text-align: center"><b>Version : 16.11.0</b></p>
-                    Ajouts : - Mise &agrave; jour des certificats<br>
-                    - npm passe &agrave; la version 8.0.0
-                    - V8 passe &agrave; la version 9.4.146.19<br><br>
-                    <p style="text-align: center"><b>Mise &agrave; jour de s&eacute;curit&eacute;</b></p>
-                    - Correction d&#39;une anomalie qui ne permettait pas de mettre des espaces dans les requ&ecirc;tes HTTP<br>
-                    - Correction d&#39;une anomalie qui ignorait des morceaux de codes des requ&ecirc;tes HTTP<br><br>
-                    <p style="text-align: center"><b>Version : 17.0.0</b></p>
-                    Ajouts : - Suppression de certaines anomalies<br><br>
-                    <p style="text-align: center"><b>Version : 17.0.1</b></p>
-                    Ajouts : - R&eacute;solution d'un probl&egrave;me avec V8 o&ugrave; certain des &quot;headers&quot; de celui-ci manquaient et ne permettait pas l&#39;ajout d&#39extensions<br><br>
+                <td><p style="text-align: center"><b>Version : 9.6</b></p>
+                    Ajouts : - La version 9.6 ajoute un support pour type de variable interne &agrave; WebAssembly : anyref ou externref(le vrai nom).<br>
+                    Cette nouvelle variable interne permet de faire le lien plus facilement entre les objets JavaScript(fonctions, classes) et le module WebAssembly.
+                    - Pour plus d&#39;informations &agrave; propos de cette variable, je vous recommande ces explications(en anglais), elles m&#39; permises de mieux comprendre la variable externref<br>
+                    Le lien : <a href="https://rustwasm.github.io/wasm-bindgen/reference/reference-types.html" target="_blank" noopener noreferrer nofollow>https://rustwasm.github.io/wasm-bindgen/reference/reference-types.html</a>
                 </td>
             </tr>
 
           <tr style="text-align: center">
               <th style="vertical-align : middle; text-align:center" scope="row">Novembre</th>
-                <td><p style="text-align: center"><b>Version : 17.1.0</b></p>
-                    Ajouts : - VoltrexMaster (personne) a &eacute;t&eacute; ajout&eacute; aux collaborateurs de Node.js<br>
-                             - Ajout d&#39;une documentation sur l&#39;importation JSON pour les tests unitaires<br><br>
-                    <p style="text-align: center"><b>Version : 17.2.0</b></p>
-                    Ajouts : - V8 passe &agrave; la version 9.4.146.19
-                </td>
+                <td><p style="text-align: center"><b>Version : 9.7</b></p>
+                    Ajouts : - De nouvelles m&eacute;thodes ont &eacute;t&eacute; ajout&eacute;es comme la m&eacute;thode &quot;findLast&quot; et la m&eacute;thode &quot;findLastIndex&quot;.<br>
+                    Ces m&eacute;thodes permettent de rechercher le dernier index ou le dernier &eacurte;l&eacute;ment qui correspond avec le test fourni.
             </tr>
 
         <tr style="text-align: center">
               <th style="vertical-align : middle; text-align:center" scope="row">D&eacute;cembre</th>
-                <td><p style="text-align: center"><b>Version : 17.3.0</b></p>
-                    Ajouts : - OpenSSL mis &agrave; jour vers la version 3.0.1 et corrige un probl&egrave;me avec une fonction de v&eacute;rification de certificats<br>
-                    - @bnb (personne) a &eacute;t&eacute; ajout&eacute; aux collaborateurs de Node.js<br>
-                    - npm mis &agrave; jour vers la version 8.3.0
+                <td><p style="text-align: center"><b>Rien &Agrave; Signaler</b></p>
+                    Aucun ajout ni modification pour le mois de D&eacute;cembre malheureusement.
                 </td>
+            </tr>
+        <tr>
+              <th scope="row"></th>
+               <td><p style="text-align: center;"><b>2022</b></td>
             </tr>
         </table>
         
-
-        <a name="p2"></a>
-				<h2>Projet 2</h2>
-				<table>
-            <tr>
-              <th>Date</th>
-              <th>Changements</th>
-              <th>Images</th>
-            </tr>
-         </table>
 
 
 
@@ -185,18 +163,31 @@
 
 				<div class="row widget">
 					<div class="col-xs-12">
-						<h4>Code Node.js</h4>
-            <a href="assets/images/nodeCode.png" target="blank" noreferer noopener>
-                <img src="assets/images/nodeCode.png">
+						<h4>Code V8 Septembre 2021</h4>
+            <p>V8 9.4 exemple</p>
+            <a href="assets/images/v8CodeSeptembre.png" target="blank" noreferer noopener>
+                <img src="assets/images/v8CodeSeptembre.png">
+            </a>
+            <p>V8 9.5 exemples</p>
+            <a href="assets/images/v8CodeSeptembre2.png" target="blank" noreferer noopener>
+                <img src="assets/images/v8CodeSeptembre2.png">
+            </a>
+            <p class="invisible">lespace</p>
+            <p class="invisible">lespace</p>
+            <a href="assets/images/v8CodeSeptembre3.png" target="blank" noreferer noopener>
+                <img src="assets/images/v8CodeSeptembre3.png">
             </a>
 					</div>
 				</div>
 				<div class="row widget">
 					<div class="col-xs-12">
-						<h4>Lorem ipsum dolor sit</h4>
-						<p><img src="assets/images/1.jpg" alt=""></p>
+						<h4>Code V8 Novembre 2021</h4>
+						<a href="assets/images/v8CodeNovembre.png" target="blank" noreferer noopener>
+                <img src="assets/images/v8CodeNovembre.png">
+            </a>
 					</div>
 				</div>
+        <!--
 				<div class="row widget">
 					<div class="col-xs-12">
 						<h4>Lorem ipsum dolor sit</h4>
@@ -204,7 +195,7 @@
 						<p>Qui, debitis, ad, neque reprehenderit laborum soluta dolor voluptate eligendi enim consequuntur eveniet recusandae rerum? Atque eos corporis provident tenetur.</p>
 					</div>
 				</div>
-
+        -->
 			</aside>
 			<!-- /Sidebar -->
 		</div>
