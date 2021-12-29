@@ -22,7 +22,14 @@ html {
 	scroll-behavior : smooth;
 }
 .marronColor{
+	color: #955628;
+}
+.normalColor{
 	color: #382526;
+}
+.marronBtnColor{
+	background-color: #D2B48C;
+	color:white;
 }
 .csharp:before{
 	content: url("../images/csharp.png");	
