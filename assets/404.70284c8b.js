@@ -1,0 +1,1 @@
+import{_ as r,s as t,o,c as a}from"./index.304b48d7.js";const s={methods:{errors(){return t.error.find(e=>e.name==="404")}},mounted(){document.getElementById("data").innerHTML=this.errors().data}},n={id:"data"};function c(e,d,_,i,m,p){return o(),a("div",n)}var f=r(s,[["render",c]]);export{f as default};
