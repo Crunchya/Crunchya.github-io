@@ -1,0 +1,1 @@
+import{_ as e,D as t,r as n,o as r,c as a}from"./index.95c53110.js";const c={components:{Default:t},mounted(){location.href=location.href+"#projects"}};function s(p,f,_,l,u,m){const o=n("Default");return r(),a(o)}var d=e(c,[["render",s]]);export{d as default};
