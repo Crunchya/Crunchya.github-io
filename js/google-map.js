@@ -100,16 +100,5 @@ function init() {
 
 	var mapElement = document.getElementById('map');
 	map = new google.maps.Map(mapElement, mapOptions);
-	var locations = [
-	
-	];
-
-	for (let i = 0; i < locations.length; i++) {
-		let marker = new google.maps.Marker({
-			icon: '',
-			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-			map: map
-		});
-	}
 }
 google.maps.event.addDomListener(window, 'load', init);
