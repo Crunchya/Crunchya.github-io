@@ -1,1 +1,0 @@
-import{_ as e,D as t,r as a,o as n,c}from"./index.f18cff99.js";const r={components:{Default:t},mounted(){location.href.indexOf("#about")==-1&&(location.href=location.href+"#about")}};function s(f,p,u,_,l,i){const o=a("Default");return n(),c(o)}var d=e(r,[["render",s]]);export{d as default};
